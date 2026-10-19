@@ -6,10 +6,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sena.actividad_02.ui.section.HeaderSection
 import com.sena.actividad_02.ui.section.BannerSection
 import com.sena.actividad_02.ui.section.CategorySection
+import com.sena.actividad_02.ui.section.HeaderSection
+import com.sena.actividad_02.ui.section.PopularDestinationsSection
 import com.sena.actividad_02.ui.theme.BackgroundBlue
 
 @Composable
@@ -24,5 +26,12 @@ fun DiscoverScreen(modifier: Modifier = Modifier) {
         HeaderSection()
         BannerSection()
         CategorySection()
+        PopularDestinationsSection(modifier = Modifier.weight(1f))
     }
+}
+
+@Preview(showBackground = true, heightDp = 800)
+@Composable
+fun DiscoverScreenPreview() {
+    DiscoverScreen()
 }
