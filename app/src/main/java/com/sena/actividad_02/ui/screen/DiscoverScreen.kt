@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.sena.actividad_02.ui.section.HeaderSection
+import com.sena.actividad_02.ui.section.BannerSection
 import com.sena.actividad_02.ui.theme.BackgroundBlue
 
 @Composable
@@ -20,5 +21,6 @@ fun DiscoverScreen(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         HeaderSection()
+        BannerSection()
     }
 }
